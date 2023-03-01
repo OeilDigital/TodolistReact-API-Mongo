@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+}
+
+.sectionLogin {
+  width: 80%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.linkToMyList {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkToMyList:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transform: scale(1.1) translateX(18px);
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.h2Login {
+  color: white;
+}
+
+.inputLogin,
+.buttonFormLogin {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.labelLogin,
+.buttonFormLogin {
+  margin-top: 1rem;
+}
+
+.buttonFormLogin {
+  padding: 0.5rem;
+}
+
+.labelLogin {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.already {
+  color: rgb(187, 176, 176);
+}
+
+.line {
+  display: inline-block;
+}
+
+.registerLink {
+  color: white;
+  text-decoration: underline;
+}
+
+.registerLink:hover {
+  cursor: pointer;
+}

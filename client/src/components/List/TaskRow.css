@@ -1,0 +1,16 @@
+strike {
+  color: grey;
+  font-weight: 500;
+}
+
+.validationBtn {
+  background-color: #16c60c;
+}
+
+.schedule {
+  background-color: rgb(53, 53, 53) ;
+}
+
+.schedule-icon {
+  color: #0d6efd;
+}

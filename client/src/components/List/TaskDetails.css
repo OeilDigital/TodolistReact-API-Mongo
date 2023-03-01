@@ -1,0 +1,18 @@
+.priorityLevel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5vw;
+  padding-top: -1vh;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #da1212c4;
+}
+
+.taskDetailsTextArea {
+  width: 100%;
+  height: auto;
+}

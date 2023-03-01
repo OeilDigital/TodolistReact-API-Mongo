@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* min-height: 100vh; */
+  background-image: url(../public/vector-calendar-icon.jpg);
+  /* background-color: dodgerblue; */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0.5rem;
+}
+
+/* Ajout le 28/2 avec install de datepicker */
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-datepicker__header {
+  background-color: lightsalmon;
+}
+
+.react-datepicker {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.3rem;
+} */
+
+/* .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 2px;
+} */
+
+/* .react-datepicker__month-container {
+  border-radius: 0.3rem;
+} */
+
+/* .react-datepicker__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-datepicker__time-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

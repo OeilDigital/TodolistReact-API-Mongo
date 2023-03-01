@@ -1,0 +1,15 @@
+.taskRowForm {
+  transform: scale(0.8);
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.submitForm {
+  height: 7.5vh;
+  width: 7vw;
+  flex-shrink: 1;
+  margin: 1vh;
+  color: white;
+  text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.5);
+}

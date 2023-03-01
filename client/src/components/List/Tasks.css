@@ -1,0 +1,32 @@
+.th {
+  text-align: center;
+}
+
+.h2Task {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 5px 3px black;
+}
+
+.table-dark > thead,
+th:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+.table-dark > thead,
+th:nth-last-child(1) {
+  border-top-right-radius: 10px;
+}
+
+.table-dark > tbody,
+tr:nth-last-child(1) > td:nth-last-child(1) {
+  border-bottom-right-radius: 10px;
+}
+
+.table-dark > tbody > tr:nth-last-child(1) > td:nth-child(1) {
+  border-bottom-left-radius: 10px;
+}
+
+.table-dark > tbody > tr:nth-last-child(1) > td {
+  border-bottom: none;
+}

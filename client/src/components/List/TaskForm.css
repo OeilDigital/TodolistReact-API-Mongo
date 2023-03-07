@@ -1,8 +1,14 @@
 .taskRowForm {
-  transform: scale(0.8);
+  width: 50vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
+  transform: scale(0.8);
+  border: 1px solid rgba(255, 255, 255, 0.363);
+  border-radius: 10px;
+  background-color: #00000012;
+
 }
 
 .submitForm {
@@ -13,3 +19,55 @@
   color: white;
   text-shadow: 1px 5px 3px rgba(0, 0, 0, 0.5);
 }
+
+.input-block {
+  width: auto;
+  display: flex;
+}
+
+.datepicker-block {
+  display: flex;
+  gap: 2vw;
+}
+
+input[placeholder="dd/mm/yyyy hh:mm"] {
+  color: white;
+}
+
+.datepicker-block > div > label {
+  color: white !important;
+}
+
+.datepicker-block > div:focus > label {
+  color: white;
+}
+
+div[class="MuiFormControl-root"] {
+  border-color: white;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+svg[class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"] {
+  fill:rgb(226, 216, 216);
+}
+
+svg[class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"]:hover {
+  fill: white;
+}
+
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root:hover {
+  background-color: transparent;
+}
+
+.form-control:focus {
+  background-color: #ffff8c;
+}
+
+input:disabled:hover {
+  cursor:not-allowed;
+}
+
+

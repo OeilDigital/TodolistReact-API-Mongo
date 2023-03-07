@@ -16,3 +16,8 @@
   width: 100%;
   height: auto;
 }
+
+.dateEndinDetails, .dateStartinDetails{
+  font-size : 0.8rem;
+  margin-bottom: -0.5vh;
+}

@@ -92,7 +92,7 @@ app.post('/api/login', async (req, res) => {
 
 // Route POST Create new task
 app.post('/api/tasklist', authenticateJWT, async (req, res) => {
-    // console.log(req.body)
+    console.log(req.body)
     await TodoList.create(req.body, (error, item) => {
         if (error) {
             res.send(error);

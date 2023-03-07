@@ -6,6 +6,7 @@ export default function TaskDetails({ selectedTask }) {
   const [details, setDetails] = useState(selectedTask.details);
   const [editModal, setEditModal] = useState(selectedTask.editableModal);
 
+  console.log('selectedTask', selectedTask)
   function toggleEditModal() {
     setEditModal((selectedTask.editableModal = !selectedTask.editableModal));
   }
@@ -34,7 +35,10 @@ export default function TaskDetails({ selectedTask }) {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">{selectedTask.name}</h5>
-            <h6 className="priorityLevel">{selectedTask.priorityLevel}</h6>
+            <h6 className="modal-title priorityLevel">{selectedTask.priorityLevel}</h6>
+            <h6 className="modal-title dateStartinDetails">{selectedTask.startDate ? 'Début : ' + new Date(selectedTask.startDate).toLocaleString("fr") : ''}</h6>
+            <span>&nbsp;</span>
+            <h6 className="modal-title dateEndinDetails">{selectedTask.endDate ? '- Fin : ' + new Date(selectedTask.endDate).toLocaleString("fr") : ''}</h6>
             <button
               type="button"
               className="btn-close"

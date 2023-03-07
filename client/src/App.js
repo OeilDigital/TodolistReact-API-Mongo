@@ -44,6 +44,7 @@ function App() {
   function offConnexion() {
     if (showList) {
       setShowList(false);
+      sessionStorage.clear();
     }
   }
 

@@ -9,6 +9,7 @@ function List() {
 
   const [tasklist, setTasklist] = useState([]);
   const [selectedTask, setSelectedTask] = useState([]);
+  console.log('tasklist from List', tasklist)
 
   function refreshTask(newTask) {
     // POST request using axios with async/await
@@ -33,6 +34,7 @@ function List() {
 
   return <div className="app d-flex flex-column px-3">
     <Tasks
+      key="tasks"
       refreshTask={refreshTask}
       updateSelectedTask={updateSelectedTask}
       refreshUpdatedTask={refreshUpdatedTask}

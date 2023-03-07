@@ -122,7 +122,6 @@ export default function TaskRow({
       <td className="text-center">
         <button onClick={() => {
           deleteTask(task.id);
-          // deleteInDB()
         }} className="btn btn-sm btn-danger" title="Supprimer">
           ✖︎
         </button>

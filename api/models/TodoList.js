@@ -10,6 +10,8 @@ const TodoListSchema = new Schema({
     validated: Boolean,
     details: String,
     editableModal: Boolean,
+    startDate: Number,
+    endDate: Number,
     postedDate: {
         type: Date,
         default: new Date()

@@ -36,9 +36,10 @@ export default function TaskDetails({ selectedTask }) {
           <div className="modal-header">
             <h5 className="modal-title">{selectedTask.name}</h5>
             <h6 className="modal-title priorityLevel">{selectedTask.priorityLevel}</h6>
-            <h6 className="modal-title dateStartinDetails">{selectedTask.startDate ? 'Début : ' + new Date(selectedTask.startDate).toLocaleString("fr") : ''}</h6>
-            <span>&nbsp;</span>
-            <h6 className="modal-title dateEndinDetails">{selectedTask.endDate ? '- Fin : ' + new Date(selectedTask.endDate).toLocaleString("fr") : ''}</h6>
+            <div className="date">
+              <h6 className="modal-title dateStartinDetails">{selectedTask.startDate ? 'Début : ' + new Date(selectedTask.startDate).toLocaleString("fr") : ''}</h6>
+              <h6 className="modal-title dateEndinDetails">{selectedTask.endDate ? 'Fin : ' + new Date(selectedTask.endDate).toLocaleString("fr") : ''}</h6>
+            </div>
             <button
               type="button"
               className="btn-close"

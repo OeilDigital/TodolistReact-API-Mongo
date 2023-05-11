@@ -21,3 +21,18 @@
   font-size : 0.8rem;
   margin-bottom: -0.5vh;
 }
+
+.date {
+  width: auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -1vh;
+}
+
+button[class="btn btn-sm btn-info me-1"]:hover{
+  background-color: #2192a8;
+}
+

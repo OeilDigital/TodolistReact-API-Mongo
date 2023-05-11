@@ -14,3 +14,11 @@ strike {
 .schedule-icon {
   color: #0d6efd;
 }
+
+button[class="btn btn-sm btn-danger"]:hover {
+  border: 1px solid red;
+}
+
+button[class="btn btn-sm btn-success validationBtn"]:hover {
+  border: 1px solid greenyellow;
+}

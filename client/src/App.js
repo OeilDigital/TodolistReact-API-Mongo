@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Register from "./components/Register";
@@ -51,40 +51,42 @@ function App() {
 
   return (
     <>
-      <header className="header d-flex flex-column px-3">
-        <Navbar
-          logged={logged}
-          updateConnexion={updateConnexion}
-          updateRegister={updateRegister}
-          updateShowList={updateShowList}
-          offConnexion={offConnexion}
-          updateAuth={updateAuth}
-        />
-      </header>
-      {/* Verifier la nature et l'utilitée de la classe */}
-      <main className="main">
-        <Circle />
-        {showList ?
-          (
-            <List />
-          ) : (
-            <>
-              {register ?
-                <Register updateConnexion={updateConnexion} />
-                :
-                <div></div>
-              }
-              {connexion ?
-                <Login updateAuth={updateAuth}
-                  updateShowList={updateShowList}
-                  updateRegister={updateRegister} />
-                :
-                <div></div>
-              }
-            </>
-          )
-        }
-      </main>
+      <div className="App">
+        <header className="header d-flex flex-column px-3">
+          <Navbar
+            logged={logged}
+            updateConnexion={updateConnexion}
+            updateRegister={updateRegister}
+            updateShowList={updateShowList}
+            offConnexion={offConnexion}
+            updateAuth={updateAuth}
+          />
+        </header>
+        {/* Verifier la nature et l'utilitée de la classe */}
+        <main className="main">
+          <Circle />
+          {showList ?
+            (
+              <List />
+            ) : (
+              <>
+                {register ?
+                  <Register updateConnexion={updateConnexion} />
+                  :
+                  <div></div>
+                }
+                {connexion ?
+                  <Login updateAuth={updateAuth}
+                    updateShowList={updateShowList}
+                    updateRegister={updateRegister} />
+                  :
+                  <div></div>
+                }
+              </>
+            )
+          }
+        </main>
+      </div>
     </>
   );
 }

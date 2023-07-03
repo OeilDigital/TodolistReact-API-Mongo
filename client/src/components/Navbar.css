@@ -18,14 +18,19 @@
 }
 
 .connect {
-  width: 9%;
-  height: 5vh;
-  display: inherit;
-  justify-content: space-between;
-  align-items: center;
+    width: 11%;
+    height: 6vh;
+    display: inherit;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #272697;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: 3px solid #25219d;
 }
 .connect .sign {
-  transform: translateY(22%) rotate(-3deg);
+  transform: translateY(22%);
   font-size: 1.5em;
   color: white;
   font-family: 'Shadows Into Light', cursive;

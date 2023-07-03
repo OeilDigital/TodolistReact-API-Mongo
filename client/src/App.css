@@ -28,8 +28,20 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
   padding: 1rem 0.5rem;
+}
+
+.strong {
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 3%;
+  transform: scale(0.2) rotate(21deg);
+  opacity: 0.2;
+  position: absolute;
+  top: 14%;
+  z-index:-1;
+  right: -14vw;
+  top: 47%;
 }
 
 /* Ajout le 28/2 avec install de datepicker */

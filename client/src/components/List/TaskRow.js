@@ -57,6 +57,14 @@ export default function TaskRow({
     }))();
   }
 
+  // function alertDetails() {
+  //   const globalResult = updateInDB();
+  //   const detailsNotEmpty = globalResult.filter((t) => t.details.length !== 0);
+  //   console.log(detailsNotEmpty);
+  // }
+
+  // console.log(alertDetails());
+
   return (
     <tr>
       {task.editable ? (
@@ -135,17 +143,31 @@ export default function TaskRow({
           &#10004;
         </button>
       </td>
-      <td className="text-center">
-        <button
-          onClick={updateSelectedTask}
-          data-bs-target="#task-details-modal"
-          data-bs-toggle="modal"
-          title="Details"
-          className="btn btn-sm btn-light rounded-circle"
-        >
-          &#128270;
-        </button>
-      </td>
+      {task.details === "" ? (
+        <td className="text-center">
+          <button
+            onClick={updateSelectedTask}
+            data-bs-target="#task-details-modal"
+            data-bs-toggle="modal"
+            title="Details"
+            className="btn btn-sm btn-light rounded-circle"
+          >
+            &#128270;
+          </button>
+        </td>
+      ) : (
+        <td className="text-center">
+          <button
+            onClick={updateSelectedTask}
+            data-bs-target="#task-details-modal"
+            data-bs-toggle="modal"
+            title="Details"
+            className="btn btn-sm btn-light rounded-circle detailsNotEmpty"
+          >
+            &#128270;
+          </button>
+        </td>
+      )}
     </tr>
   );
 }

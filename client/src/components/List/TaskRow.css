@@ -22,3 +22,12 @@ button[class="btn btn-sm btn-danger"]:hover {
 button[class="btn btn-sm btn-success validationBtn"]:hover {
   border: 1px solid greenyellow;
 }
+
+.detailsNotEmpty{
+    border: 2px solid #fe2cff;
+    background-color: pink;
+}
+
+
+
+

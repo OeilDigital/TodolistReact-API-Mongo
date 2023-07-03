@@ -5,6 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import List from "./components/List/List"
 import Circle from "./components/Circle";
+import Heroban from "./components/Heroban";
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
           }
         </main>
       </div>
+      <Heroban />
     </>
   );
 }

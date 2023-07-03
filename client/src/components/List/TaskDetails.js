@@ -57,7 +57,8 @@ export default function TaskDetails({ selectedTask }) {
                 type="text-area"
                 name="textDetail"
                 onChange={handleChange}
-                value={details}
+                value={selectedTask.details}
+                placeholder={selectedTask.details}
               />
             )}
             <br />

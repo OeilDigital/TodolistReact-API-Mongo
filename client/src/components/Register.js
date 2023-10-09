@@ -85,7 +85,7 @@ export default function Register({
                 <section className="sectionRegister">
                     <h1>Success!</h1>
                     <p>
-                        <a href="#">Sign In</a>
+                        <div onClick={updateConnexion} >Sign In</div>
                     </p>
                 </section>
             ) : (

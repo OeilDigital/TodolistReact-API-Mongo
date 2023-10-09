@@ -10,6 +10,17 @@
   border-radius: 10px;
 }
 
+.sectionRegister > p > div{
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+.sectionRegister > p > div:hover{
+  cursor: pointer;
+}
+
 .formRegister {
   display: flex;
   flex-direction: column;
